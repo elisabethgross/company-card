@@ -1,0 +1,84 @@
+#cards {
+  color:#333;
+  font-family:"Raleway";
+  font-size:16px;
+  padding:1rem 0;
+  .card {
+    display: block;
+    background:#36aade;
+    border-radius:1rem;
+    color:#f0f0f0;
+    font-weight:600;
+    height:220px;
+    position:relative;
+    width:340px
+    }
+    .card__expiration {
+      font-size:1.25rem;
+      left:14.5rem;
+      position:relative;
+      top:22px;
+      display:inline
+    }
+    .card__little-letter {
+      font-size:16px;
+      font-weight:400;
+      left:12rem;
+      position:relative;
+      text-align:center;
+      top:22px;
+      width:30px
+      }
+      .card__little-number {
+        font-size:16px;
+        font-weight:400;
+        left:1.5rem;
+        position:relative;
+        top:40px;
+      }
+      .card__name {
+        font-size:17px;
+        left:1.5rem;
+        letter-spacing:2.5px;
+        position:relative;
+        text-transform:uppercase;
+        top:36px;
+      }
+      .card__number {
+        font-size:17px;
+        letter-spacing:2.5px;
+        position:relative;
+        left:1.5rem;
+        top:37px;
+      }
+      .card__sim {
+        background:#ffce3f;
+        border-radius:.5rem;
+        height:3.25rem;
+        left:1.5rem;
+        position:relative;
+        top:2rem;
+        width:3.75rem
+      }
+      .card__type {
+        background:#d6d6d6;
+        border-radius:.375rem;
+        height:46px;
+        left:14.625rem;
+        position:relative;
+        top:2.25rem;
+        width:73px;
+      }
+      .card__cvv {
+        background:#d7e7f0;
+        color:#404040;
+        height:2rem;
+        left:16rem;
+        letter-spacing:2.5px;
+        line-height:2rem;
+        position:relative;
+        text-align:center;
+        top:6.5rem;
+        width:3.5rem
+      }
+}

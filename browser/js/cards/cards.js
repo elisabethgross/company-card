@@ -10,6 +10,7 @@ app.controller('CardsCtrl', function ($scope, CardsFactory) {
 
   CardsFactory.getAll()
   .then(function (cards) {
+    console.log(cards)
     $scope.cards = cards;
   });
 });

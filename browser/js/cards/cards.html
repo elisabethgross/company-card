@@ -1,9 +1,25 @@
-<div class="container">
-  <div class='col-xs-0'>
-      <h3>Cards:</h3>
-      <div class="row">
+<div id='cards' class="container">
+  <div class='col-xs-10'>
+    <div class="row">
+        <h3>Cards:</h3>
         <div ng-repeat="card in cards">
-          <div>{{ card }}</div>
-      </div>
+        <br>
+          <div class="card">
+            <div class="card__sim"></div>
+            <div class="card__number">
+              {{ card.number }}
+            </div>
+            <div class="card__little-number">
+              cvv: {{ card.cvv }}
+            </div>
+            <div class="card__expiration">
+              Exp. {{ card.expiration }}
+            </div>
+            <div class="card__name">
+              {{ card.name }}
+            </div>
+          </div>
+        </div>
+    </div>
   </div>
 </div>
