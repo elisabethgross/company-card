@@ -10,7 +10,6 @@ app.controller('CardsCtrl', function ($scope, CardsFactory) {
 
   CardsFactory.getAll()
   .then(function (cards) {
-    console.log(cards)
     $scope.cards = cards;
   });
 });
@@ -20,6 +19,13 @@ app.factory('CardsFactory', function ($http) {
 
   f.getAll = function () {
     return $http.get('/api/cards')
+    .then(function (res) {
+      return res.data;
+    });
+  };
+
+  f.getOne = function (id) {
+    return $http.get('/api/cards/' + id)
     .then(function (res) {
       return res.data;
     });

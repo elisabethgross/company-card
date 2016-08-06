@@ -1,9 +1,10 @@
 <div id='cards' class="container">
   <div class='col-xs-10'>
     <div class="row">
-        <h3>My Cards:</h3>
-        <div ng-repeat="card in cards">
+      <h3>My Cards:</h3>
+      <div ng-repeat="card in cards">
         <br>
+        <a ui-sref="card({id: card.id})">
           <div class="card">
             <div class="card__sim"></div>
             <div class="card__number">
@@ -19,7 +20,8 @@
               {{ card.name }}
             </div>
           </div>
-        </div>
+        </a>
+      </div>
     </div>
   </div>
 </div>
