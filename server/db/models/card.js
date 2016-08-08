@@ -14,15 +14,9 @@ var Card = db.define('card', {
   },
   cvv: {
     type: Sequelize.INTEGER
-  }
-}, {
-  setterMethods: {
-    randomCardNum: function () {
-      return Math.random() * (10000000000000000 - 1000000000000000) + 1000000000000000;
-    },
-    randomCardCvv: function () {
-      return Math.random() * (999 + 100) + 100;
-    }
+  },
+  limit: {
+    type: Sequelize.INTEGER
   }
 });
 
