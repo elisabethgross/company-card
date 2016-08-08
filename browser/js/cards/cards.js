@@ -31,5 +31,12 @@ app.factory('CardsFactory', function ($http) {
     });
   };
 
+  f.createOne = function () {
+    return $http.post('/api/cards')
+    .then(function (res) {
+      return res.data;
+    });
+  };
+
   return f;
 });
