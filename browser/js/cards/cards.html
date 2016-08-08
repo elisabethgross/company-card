@@ -1,5 +1,5 @@
 <div id='cards' class="container">
-  <div class='col-xs-10'>
+  <div>
     <div class="row">
       <h3>My Cards:</h3>
       <div ng-repeat="card in cards">
@@ -19,9 +19,13 @@
             <div class="card__name">
               {{ card.name }}
             </div>
+            <div class="card__limit">
+              limit: {{ card.limit }}
+            </div>
           </div>
         </a>
-      </div>
+<!--         <p>The limit on this card is: {{ card.limit }}</p>
+ -->      </div>
     </div>
   </div>
 </div>

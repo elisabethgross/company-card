@@ -16,7 +16,8 @@ var Card = db.define('card', {
     type: Sequelize.INTEGER
   },
   limit: {
-    type: Sequelize.INTEGER
+    type: Sequelize.STRING,
+    defaultValue: 'None'
   }
 });
 
